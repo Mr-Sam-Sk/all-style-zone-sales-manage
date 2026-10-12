@@ -2,7 +2,7 @@
  * Configure SUPABASE_URL and SUPABASE_ANON_KEY below. Never put a service-role key here.
  */
 const SUPABASE_URL = "https://drlmfbpnqevqhxcregnb.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_XxRKj8p7zPxvb9hfQrU9aA__b20bov6";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRybG1mYnBucWV2cWh4Y3JlZ25iIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE3OTk4NjAsImV4cCI6MjEwNzM3NTg2MH0.Rmawu09865WXIg-mMoZSvR48yps2UsH0fKICEocsOLE";
 
 const readyConfig = SUPABASE_URL.startsWith("https://") && !SUPABASE_URL.includes("PASTE_") && SUPABASE_ANON_KEY.length > 30 && !SUPABASE_ANON_KEY.includes("PASTE_");
 const client = readyConfig && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
